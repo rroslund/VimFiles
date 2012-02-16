@@ -1,0 +1,51 @@
+
+set nocompatible
+filetype plugin indent on
+syntax on
+
+colorscheme desert
+
+
+"Default {{{
+set expandtab
+set number
+let mapleader = ","
+let g:mapleader = ","
+
+
+"}}}
+
+"Window Management{{{
+nnoremap _ <C-W>-
+nnoremap + <C-W>+
+nnoremap - <C-W><
+nnoremap = <C-W>>
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-l> <C-W>l
+nnoremap <C-h> <C-W>h
+
+"}}}
+
+
+"Searching {{{
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+"}}}
+
+"Python {{{
+autocmd BufRead,BufNewFile *.py
+  \ setlocal tabstop=4
+  \ setlocal softtabstop=4
+  \ setlocal shiftwidth=4
+  \ setlocal textwidth=80
+  \ setlocal smarttab
+  \ setlocal expandtab
+"}}}
+
+"Vimrc {{{
+autocmd BufRead,BufNewFile *vimrc inoremap nno nnoremap
+autocmd BufRead,BufNewFile *vimrc inoremap ino inoremap
+"}}}
