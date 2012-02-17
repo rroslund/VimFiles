@@ -7,15 +7,21 @@ colorscheme desert
 
 
 "Default {{{
-set expandtab
-set number
 let mapleader = ","
-let g:mapleader = ","
+let g:mapleader = "," 
+set expandtab                   "Expands tabs
+set number                      "Line numbers
+set backspace=indent,eol,start  "backspace will account for these 3 situations.
+set tabstop=2                   "Tabs are 2 spaces
+set softtabstop=2               "Number of spaces a tab counts for
+set shiftwidth=2                "AudoIndent spaces
+set smarttab                    "Uses shiftwidth. BS will delete the full tab.
+set showmatch                   "Shows matching braces
 
 
 "}}}
 
-"Window Management{{{
+"Tab/Window Management{{{
 nnoremap _ <C-W>-
 nnoremap + <C-W>+
 nnoremap - <C-W><
@@ -24,7 +30,8 @@ nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-l> <C-W>l
 nnoremap <C-h> <C-W>h
-
+nnoremap <C-n> :tabn<CR>
+nnoremap <C-p> :tabp<CR>
 "}}}
 
 
