@@ -1,0 +1,16 @@
+"FuzzyFinder Mappings {{{
+let g:fuf_keyOpen = '<CR>'
+let g:fuf_keyOpenTabpage = '<Tab>'
+map <c-f> :FufFile <CR>
+map <c-b> :FufBuffer <CR>
+"}}}
+
+"Vundle {{{
+set rtp+=~/.vim/bundle/vundle/.
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+Bundle 'tpop/vim-fugitive'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+"}}}
