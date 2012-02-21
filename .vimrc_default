@@ -36,13 +36,12 @@ set smartcase
 "}}}
 
 "Python {{{
-autocmd BufRead,BufNewFile *.py
-  \ setlocal tabstop=4
-  \ setlocal softtabstop=4
-  \ setlocal shiftwidth=4
-  \ setlocal textwidth=80
-  \ setlocal smarttab
-  \ setlocal expandtab
+autocmd BufRead,BufNewFile *.py setlocal tabstop=4
+autocmd BufRead,BufNewFile *.py setlocal softtabstop=4
+autocmd BufRead,BufNewFile *.py setlocal shiftwidth=4
+autocmd BufRead,BufNewFile *.py setlocal textwidth=80
+autocmd BufRead,BufNewFile *.py setlocal smarttab
+autocmd BufRead,BufNewFile *.py setlocal expandtab
 "}}}
 
 "Vimrc {{{
