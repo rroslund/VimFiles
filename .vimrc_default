@@ -9,6 +9,12 @@ colorscheme desert
 "Default {{{
 set expandtab
 set number
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+"set textwidth=80
+set smarttab
+set expandtab
 let mapleader = ","
 let g:mapleader = ","
 
@@ -24,6 +30,8 @@ nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-l> <C-W>l
 nnoremap <C-h> <C-W>h
+nnoremap <silent><c-p> :tabp <CR>
+nnoremap <silent><c-n> :tabn <CR>
 
 "}}}
 
