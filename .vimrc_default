@@ -34,8 +34,9 @@ nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-l> <C-W>l
 nnoremap <C-h> <C-W>h
-nnoremap <C-n> :tabn<CR>
-nnoremap <C-p> :tabp<CR>
+nnoremap <silent><c-p> :tabp <CR>
+nnoremap <silent><c-n> :tabn <CR>
+
 "}}}
 
 
@@ -47,15 +48,14 @@ set smartcase
 "}}}
 
 "Python {{{
-autocmd BufRead,BufNewFile *.py
-  \ setlocal tabstop=4
-  \ setlocal softtabstop=4
-  \ setlocal shiftwidth=4
-  \ setlocal textwidth=80
-  \ setlocal smarttab
-  \ setlocal expandtab
 autocmd FileType python nnoremap <buffer> <leader>c I#
 autocmd FileType python nnoremap <buffer> <leader>d I'''
+autocmd BufRead,BufNewFile *.py setlocal tabstop=4
+autocmd BufRead,BufNewFile *.py setlocal softtabstop=4
+autocmd BufRead,BufNewFile *.py setlocal shiftwidth=4
+autocmd BufRead,BufNewFile *.py setlocal textwidth=80
+autocmd BufRead,BufNewFile *.py setlocal smarttab
+autocmd BufRead,BufNewFile *.py setlocal expandtab
 "}}}
 
 "Vimrc {{{
