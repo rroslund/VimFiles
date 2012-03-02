@@ -54,6 +54,8 @@ autocmd BufRead,BufNewFile *.py
   \ setlocal textwidth=80
   \ setlocal smarttab
   \ setlocal expandtab
+autocmd FileType python nnoremap <buffer> <leader>c I#
+autocmd FileType python nnoremap <buffer> <leader>d I'''
 "}}}
 
 "Vimrc {{{
