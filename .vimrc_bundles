@@ -11,6 +11,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-haml'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 "}}}
