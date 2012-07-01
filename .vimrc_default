@@ -1,8 +1,8 @@
-echo "Loading vimrc_default!"
 set nocompatible
 filetype plugin indent on
 syntax on
 
+source ~/bin/VimFiles/.vimrc_bundles
 colorscheme desert
 
 
@@ -23,6 +23,7 @@ nnoremap <leader>sv :vsplit $MYVIMRC<cr>
 
 "KeyMappings {{{
 inoremap <c-d> <esc>yypi
+imap jj <esc>
 "}}}
 
 "Tab/Window Management{{{
